@@ -39,9 +39,8 @@ const getUserWithId = function (id) {
   SELECT * FROM users
   WHERE id = '${id}';
   `)
-    .then(res =>
-      res.rows[0])
-    .catch(res => res.rows[null]);
+  .then(res => res.rows[0])
+  .catch(res => res.rows[null]);
 };
 exports.getUserWithId = getUserWithId;
 
